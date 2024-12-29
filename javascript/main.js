@@ -21,13 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-fetch('header.html')
+fetch('/html/header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header').innerHTML = data;
             })
             .catch(error => console.error('Error loading header:', error));
-fetch('footer.html')
+fetch('/html/footer.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('footer').innerHTML = data;
@@ -165,7 +165,7 @@ function autoResize(textarea) {
         textarea.style.overflowY = 'hidden'; 
     }
 }
-fetch('notificationbar.html')
+fetch('/html/notificationbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('notificationbar').innerHTML = data;
