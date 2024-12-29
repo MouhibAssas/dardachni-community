@@ -1,0 +1,23 @@
+:root {
+    --dark-gray: #354649;   /* Navbar, headings */
+    --medium-gray: #6C7A89; /* Buttons, hover effects */
+    --light-teal: #A3C6C4;  /* Active links, focus states */
+    --light-gray: #E0E7E9;  /* Backgrounds, contrasts */
+}
+#btn-login{
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
+}
+.btn-outline-custom {
+    border-color: var(--medium-gray); /* Custom border color */
+    color: var(--medium-gray);       /* Custom text color */
+}
+
+.btn-outline-custom:hover {
+    background-color: #007bff; /* Custom hover background color */
+    color: #fff;               /* Text color on hover */
+}
+#btn-signup{
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
+}

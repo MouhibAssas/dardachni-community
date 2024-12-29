@@ -1,0 +1,76 @@
+:root {
+    --dark-gray: #354649;   /* Navbar, headings */
+    --medium-gray: #6C7A89; /* Buttons, hover effects */
+    --light-teal: #A3C6C4;  /* Active links, focus states */
+    --light-gray: #E0E7E9;  /* Backgrounds, contrasts */
+}
+
+#create-post-title 
+, #create-post-description,
+#create-topic-title{
+    background-color:var(--light-gray);
+    resize: none;
+    overflow-y: auto; /* Make it scrollable */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    border-color: var(--medium-gray);
+}
+.form-floating > label::after {
+    background-color: transparent !important;
+}
+
+#profile-cover{
+    width: 900px;
+    height: 191px;
+    object-fit: cover;
+}
+#profile-picture{
+    width: 130px;
+    
+}
+.w-customized{
+    max-width: 100px;
+}
+.navbar-customized{
+    background-color: var(--light-teal);
+}
+.profile-navbar-elements{
+    border-right: 2px solid var(--medium-gray);
+}
+
+ .elements-box{
+    cursor: pointer;
+    
+} 
+.user-img-element{
+    width: 40px;
+}
+  /* md screen */
+@media (max-width:768px){
+    #profile-picture{
+        height: 100px;
+    }
+
+}
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+}
+
+.person-know p{
+    color: var(--medium-gray);
+
+}
+.person-know{
+    border-bottom: 1px solid var(--dark-gray) !important ;
+    cursor: pointer;
+}
+#topics-btn:focus,
+#topics-btn.active,
+#posts-btn:focus,
+#posts-btn.active,
+#savings-btn:focus,
+#savings-btn.active {
+    border-color: transparent !important;
+}

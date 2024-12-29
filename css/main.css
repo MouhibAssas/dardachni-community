@@ -1,0 +1,182 @@
+:root {
+    --dark-gray: #354649;   /* Navbar, headings */
+    --medium-gray: #6C7A89; /* Buttons, hover effects */
+    --light-teal: #A3C6C4;  /* Active links, focus states */
+    --light-gray: #E0E7E9;  /* Backgrounds, contrasts */
+}
+.text-primary {
+    --bs-text-opacity: 1;
+    color: rgba(var(--dark-gray), var(--bs-text-opacity)) !important;
+  }
+.text-secondary{
+    --bs-text-opacity: 1;
+    color: rgba(var(--light-teal), var(--bs-text-opacity)) !important;
+}
+body{
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+}
+
+/* This css is for the header  */
+.navbar{
+   background-color: var(--dark-gray) ;
+   color: var(--light-gray);
+}
+.navbar-brand span{
+    color: var(--light-gray);
+    user-select: none !important;  /* Prevents text selection */
+    -webkit-user-select: none !important;  /* For Safari */
+    -moz-user-select: none !important;/* For Firefox */
+    -ms-user-select: none !important;  /* For Internet Explorer/Edge */
+    margin-top: 1rem;
+}
+.navbar-brand{
+    display: flex;
+    flex-direction: row;
+
+}
+.nav-link{
+    color: var(--light-gray);
+}
+.nav-link.active,
+.nav-link:focus,
+.nav-link:hover{
+    color: var(--light-teal) !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+    color: var(--light-teal) !important;
+}
+.navbar-toggler-icon{
+    box-shadow: none;
+    color: var(--light-teal) !important;
+}
+.fa-solid {
+    color: var(--light-teal);
+}
+.navbar .search{
+    border-left: 1px solid var(--light-teal)
+}
+
+/* this is the body */
+.under-header{
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    background-color: var(--light-teal);
+}
+.under-header-title{
+    padding-top: 60px ;
+}
+.under-header-description{
+    padding-top: 30px;
+}
+#btn-under-header{
+    margin-top: 20px;
+    background-color: var(--light-gray);
+}
+
+
+.part1{
+    border-right: 2px solid var(--medium-gray);
+}
+.part1 li {
+    padding-top: 10px;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+
+
+#user-post {
+    display: flex;
+    align-items: center; /* Vertically aligns image and username */
+    gap: 10px; /* Adds spacing between the image and text */
+}
+
+#user-img {
+    width: 75px;
+    border-radius: 50%; /* Makes the image circular */
+}
+
+#username {
+    margin: 0; /* Removes default margin for the username */
+    font-weight: bold; /* Makes the username bold */
+}
+
+#date-publication {
+    margin: 0;
+    font-size: 0.9rem; /* Adjusts font size for the date */
+    color: gray; /* Optional: Adds a subtle color to the date */
+}
+#post{
+    margin-top: 10px;
+}
+#vote-container{
+    padding-top:30px;
+
+}
+#upvote, #downvote{
+    
+    color: var(--medium-gray);
+}
+
+.part4 {
+    position: sticky;
+    top: 30px; /* Adjust as needed */
+    z-index: 1000; /* Ensure it stays above other content */
+  }
+
+#user-comment img {
+    width: 50px;
+}
+
+#comment-section{
+    border: 1px solid var(--dark-gray);    
+}
+#my-comment textarea{
+    background-color:var(--light-gray);
+    resize: none;
+    overflow-y: auto; /* Make it scrollable */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+#my-comment img {
+    width: 30px;
+    vertical-align: top;
+}
+#send-comment{
+    cursor:pointer;
+}
+#read-more-comments{
+    color: var(--dark-gray);
+    text-decoration: none;
+}
+
+.btn-customized{
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
+    outline-color: #354649;
+}
+
+.under-header-title, .under-header-description, #btn-under-header {
+    visibility: hidden; /* Ensure animations are visible only when triggered */
+}
+
+/* css ll footer */
+footer{
+    margin-top: 30px;
+    background-color: var(--dark-gray);
+}
+footer a{
+    text-decoration: none;
+    color: var(--light-teal);
+}
+footer h5{
+    color: var(--light-gray);
+}
+.footer-parts{
+    border-right: 1px solid var(--light-teal);
+}
+
+

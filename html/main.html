@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dardachni</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+<div id="header">
+
+</div>
+      
+<body>
+  <div class="container-fluid ">
+    <div class="row">
+  <div class="under-header col-12 mb-0" id="under-header">
+<h2 class="under-header-title animate__animated"> Welcome to Dardachni !</h2>
+<p class="under-header-description animate__animated"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse at iure minus odit enim expedita aliquam est molestias fuga ipsam veritatis velit quidem eveniet aspernatur neque voluptatibus, excepturi minima facilis.</p>
+<a href="/html/login.html"><btn id="btn-under-header" class="btn mb-3 animate__animated" onclick="justdoit1()"> Join our community</btn></a>
+</div>
+</div>
+  </div>
+
+<!-- <btn id="btn-test" class="btn btn-primary" onclick="justdoit()"> test</btn> -->
+<div class="container-fluid mt-3 " >
+  <div class="row d-flex flex-md-row ">
+    <div class="part1 order-1 col-2 d-none d-md-block">
+      <ul>
+        <li class="row d-flex  align-items-center"><i class="fa-solid fa-ghost text-primary col-3"></i> <span class="col-9"> Horror</span></li>
+        <li class="row d-flex  align-items-center"><i class="fa-solid fa-gamepad text-primary col-3"></i> <span class="col-9"> Games</span></li>
+        <li class="row d-flex  align-items-center"><i class="fa-solid fa-newspaper text-primary col-3"></i> <span class="col-9"> News</span></li>
+        <li class="row d-flex  align-items-center"><i class="fa-solid fa-face-grin-squint-tears text-secondary col-3"></i> <span class="col-9"> Humor</span>  </li>
+        <li class="row d-flex  align-items-center"><i class="fa-solid fa-comments-dollar text-secondary col-3"></i> <span class="col-9"> Money</span></li>
+      </ul>
+    </div>
+    
+    <div class="part2 order-2 col-2 text-center" id="vote-container">
+      <button id="upvote" class="btn">▲</button>
+      <h5 id="vote-count">0</h5>
+      <button id="downvote" class="btn">▼</button>
+
+    </div>
+    <div class="part3 order-3 col-10 col-md-6 mt-3" >
+      <div class="container-fluid">
+      <div class="row" id="user-post">
+        <img id="user-img" class="col-auto"src="/assets/user.jpg">
+        <div class="col">
+        <h6 id="username" class="col-10">username</h6>
+        <p id="date-publication">1d</p>
+       </div>
+      </div>
+      </div>
+      <div id="post" class="ms-2">
+      <h3 id="post-titre">Is it bad to not be smart and intelligent as the rest of common people? </h3> 
+      <p id="post-description">Of course it’s OK not to be (what other people call) ‘smart’.
+
+        For one thing, smart people aren’t always smart. I can tell you stories of ‘geniuses’ who are so involved in their pet projects they forget to eat. Some, who are particularly valuable, have minders to clean them up for special occasions. That’s not always a pleasant job because the minder probably has to bathe a person who hasn’t taken care of their personal hygiene for some time. There are stories of them finding sandwiches and other food items in pockets.
+        
+        So, if you can take care of your personal hygiene, manage your money, get to work on time, and generally complete your daily tasks satisfactorily, you may actually be more valuable than a ‘genius’ who doesn’t.
+        
+        Besides, ‘smart’ is a very narrow area. There are many perfectly average people who contribute a great deal to society. They can be loving, caring, emotionally stable, spiritual, artistic, the list of attributes is endless. Just because a person is ‘smart’ doesn’t mean they have those characteristics.
+        
+        At the other extreme, I know a Down Syndrome girl who brightens my day every time I see her. She gives me a great big hug when we meet. She is always cheerful. I would destroy anyone who harmed her. Fortunately, she has people who love and care for her and she returns that love in so many ways.
+        
+        The area between mentally handicapped and brilliant is full of wonderful people who hold down jobs, love one another, raise beautiful children, do wonderful artwork and handicrafts, and in general live useful and fulfilled lives.
+        
+        Yes! It’s OK not to be ‘smart’.
+      </p>
+      </div>
+      <div id="post-interaction" class="ms-2">
+        <span id="comment-btn"><i class="fa-regular fa-comment fs-normal text-primary" id="comment-number"> </i> 232</span>
+        <span class="m-3" id="share-btn"><i class="fa-solid fa-share-nodes text-primary"></i> </span>
+        <span class="me-5"  id="save-btn" onclick="toggleSave()"><i class="fa-regular fa-bookmark text-primary"></i></span>
+        </div>
+        <div id="comment-section" class=" mb-3 mt-3 rounded ">
+          <div id="user-comment" class="row mt-3 ms-1 align-items-center">
+          <img src="/assets/user.jpg" class="rounded-circle col-auto" >  </img>
+          <div class="col-auto d-flex">
+            <h6 class="me-2 mb-0">Username Name</h6>
+            <p class="mb-0"> 16h</p>
+          </div>
+        </div>
+          <div id="comment-description" class="ms-2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad impedit voluptatum ea quas unde suscipit qui provident eum rerum facere reiciendis vitae vel beatae molestias, modi ratione maxime eius quisquam?</p>
+          </div>
+          <div id="comment-interaction" class="ms-2 d-flex">
+            <span><i class="fa-regular fa-heart"></i> 99</span>
+            <span class="ms-auto me-3"><a href="" id="read-more-comments">Read more comments</a></span>
+          </div>
+          <div id="my-comment" class="rounded-circle d-flex align-items-start mt-2">
+            <img src="/assets/user.jpg"  class="rounded-circle mt-0">
+            <textarea type="text" id="comment-input"  placeholder="Comment here" class="form-control ms-3" rows="1" oninput="autoResize(this)" ></textarea>
+            <i class="fa-regular fa-paper-plane me-3 ms-3" id="send-comment"  onclick="sendComment()" ></i>
+          </div>
+        
+        </div>
+
+    </div>
+   <div id="notificationbar"  class="mb-3 col-md-2  order-1 d-flex flex-md-column justify-content-center align-items-center order-md-4"></div>
+
+
+  </div>
+</div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="/javascript/main.js"></script>
+    
+</body>
+<div id="footer"></div>
+</html>
